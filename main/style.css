@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  --secondary: #eef0f8;
+  --primary-color: #dbe2ef;
+  --accent: #112d4e;
+}
+
+.hero {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: left;
+  background-color: var(--primary-color);
+  box-sizing: border-box;
+  padding: 0 7vw;
+  height: 100vh;
+}
+
+.nav {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 4vh;
+  font-size: 4vh;
+  margin: 6vh 0;
+}
+
+.text {
+  text-decoration: none;
+  color: var(--accent);
+  font-family: "Bondoni Moda";
+  font-weight: 700;
+}
+
+.ban {
+  display: grid;
+  grid-template-columns: repeat(3, 27vw);
+  grid-template-rows: 20vh 40vh;
+  justify-items: center;
+  align-items: center;
+  margin: 10vh 0;
+  gap: 2vw 2vw;
+}
+
+.title {
+  grid-row: 1/2;
+  grid-column: 2/3;
+  font-size: 15vh;
+  font-family: "Dancing Script";
+  color: var(--accent);
+}
+
+.ico {
+  background-color: var(--secondary);
+  height: 10vh;
+  width: 10vh;
+  border-radius: 10px;
+  padding: 1.5vh 1.5vh;
+  box-sizing: border-box;
+  align-self: center;
+  margin: 1vh 0;
+}
+
+.f1 {
+  display: flex;
+  flex-flow: column nowrap;
+  grid-row: 2/3;
+  grid-column: 1/2;
+  align-items: center;
+  gap: 3vh;
+  position: relative;
+  top: 1vh;
+}
+
+.f2 {
+  display: flex;
+  flex-flow: column nowrap;
+  grid-row: 2/3;
+  grid-column: 2/3;
+  align-items: center;
+  gap: 3vh;
+  position: relative;
+  top: 1vh;
+}
+
+.f3 {
+  display: flex;
+  flex-flow: column nowrap;
+  grid-row: 2/3;
+  grid-column: 3/4;
+  align-items: center;
+  gap: 3vh;
+  position: relative;
+  top: 1vh;
+}
+
+.head {
+  font-size: 10vh;
+  font-family: "Dancing Script";
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.sv {
+  height: 7vh;
+}
+
+.na {
+  font-size: 3vh;
+  font-weight: 350;
+  font-family: "Poppins";
+  text-wrap: balance;
+  color: var(--accent);
+}
+
+.ft {
+  text-align: center;
+}
+
+.resume {
+  padding: 5vh 7vw;
+  background-color: var(--primary-color);
+}
+
+hr {
+  border: 0.5vh solid var(--accent);
+}
+
+.cont {
+  margin: 5vh 0;
+  display: grid;
+  grid-template-columns: 40vw 40vw;
+  grid-template-rows: auto;
+  gap: 4vw;
+}
+
+.img {
+  width: 40vw;
+  border: 4px solid var(--accent);
+  border-radius: 25px;
+}
+
+.im1 {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+
+.about {
+  background-color: var(--secondary);
+  padding: 5vh 7vw;
+}
+
+.ab {
+  display: flex;
+  height: 65vh;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.prof {
+  margin-right: 5vw;
+  border: 2px solid var(--accent);
+  border-radius: 25px;
+  width: 30vw;
+}
+
+#Projects {
+  background-color: var(--secondary);
+  padding: 5vh 7vw;
+}
+
+.cont1 {
+  margin: 5vh 0;
+  display: grid;
+  grid-template-columns: 40vw 40vw;
+  grid-template-rows: auto;
+  gap: 4vw;
+  margin-bottom: 12vh;
+}
+
+#contact {
+  padding: 5vh 7vw;
+  background-color: var(--primary-color);
+}
+
+.fl {
+  display: flex;
+  margin: 5vh 0;
+  flex-flow: column nowrap;
+  gap: 4vh;
+}
+
+.text1 {
+  color: var(--accent);
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 3vh;
+}
+
+.em {
+  display: flex;
+  gap: 3vw;
+  align-items: center;
+}
+
+.con {
+  width: 10vw;
+  text-align: center;
+  padding: 2vh 0;
+  font-size: 3vh;
+  font-weight: 600;
+  background-color: var(--accent);
+  color: var(--primary-color);
+  border-radius: 40px;
+}
+
+.butt{
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.con:hover{
+    background-color: var(--primary-color);
+    border: 2px solid var(--accent);
+}
+
+.con:hover{
+    .butt{
+        color: var(--accent);
+    }
+}
+
+@media (max-width : 1270px){
+  .title{
+    font-size: 10vh;
+  }
+  .ban{
+    margin: 5vh;
+  }
+
+  .na{
+    font-size: 2.8vh;
+  }
+}
+
+@media (max-width : 970px){
+  .title{
+    font-size: 8vh;
+  }
+
+  .na{
+    font-size: 2.5vh;
+  }
+
+  .con{
+    width: 15vw;
+  }
+}
+
+@media (max-width : 770px){
+
+  .na{
+    font-size: 4vh;
+  }
+
+  .title{
+    font-size: 15vh;
+  }
+
+  .hero{
+    height: auto;
+    align-items: center;
+  }
+
+  .ban{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5vh;
+  }
+
+  .ab{
+    flex-flow: column nowrap;
+    height: auto;
+    gap: 5vh;
+  }
+
+  .prof{
+    width: 80vw;
+  }
+
+  .cont{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5vh;
+  }
+
+  .cont1{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5vh;
+  }
+
+  .img{
+    width: 80vw;
+  }
+
+  .con{
+    width: 20vw;
+  }
+}
+
+@media (max-width : 570px){
+  .nav{
+    visibility: unset;
+  }
+
+  .con{
+    width: 80vw;
+  }
+
+}
